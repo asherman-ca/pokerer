@@ -35,11 +35,11 @@ require('./routes/authRoutes')(app);
 
 app.set('view engine', 'ejs');
 
-app.get(['/'], (req, res) => {
+app.get(require('./routes/frontRoutes'), (req, res) => {
   res.render('index');
 });
 
 app.use(express.static(__dirname + '/public'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT);
