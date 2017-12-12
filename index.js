@@ -1,10 +1,8 @@
-// just requiring something simply runs it instead of assigning it to a variable
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
-const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
 
 require('./models/User');
@@ -21,25 +19,21 @@ app.use(
   })
 );
 
-app.use(
-  sassMiddleware({
-    src: path.join(__dirname, 'sass'),
-    dest: path.join(__dirname, 'public')
-  })
-);
-
 app.use(passport.initialize());
 app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 
-app.set('view engine', 'ejs');
+if (process.env.NODE_ENV === 'production') {
+  // checks client build directory for route request, returns if it finds something
+  app.use(express.static('client/build'));
 
-app.get(require('./routes/frontRoutes'), (req, res) => {
-  res.render('index');
-});
+  const path = require('path');
+  // for all routes, we give them the html doc
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
-app.use(express.static(__dirname + '/public'));
-
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
