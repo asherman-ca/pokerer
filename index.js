@@ -1,9 +1,9 @@
+// just requiring something simply runs it instead of assigning it to a variable
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
-
 require('./models/User');
 require('./services/passport');
 
