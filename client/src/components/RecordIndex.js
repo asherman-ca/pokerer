@@ -6,7 +6,13 @@ class RecordIndex extends Component {
   render() {
     return (
       <div className="record-index">
-        <h1>Record Index</h1>
+        <div className="record-index-left">
+          <h1>Record Index</h1>
+        </div>
+
+        <div className="record-index-right">
+          <h1>User</h1>
+        </div>
       </div>
     );
   }

@@ -10,14 +10,6 @@ import Landing from './Landing';
 import RecordForm from './RecordForm';
 import RecordIndex from './RecordIndex';
 
-// const Header = () => <h2>Header</h2>;
-const Dashboard = () => (
-  <div style={{ textAlign: 'center' }}>
-    <h2>Dashboard</h2>
-  </div>
-);
-const SurveyNew = () => <h2>SurveyNew</h2>;
-
 class App extends Component {
   componentDidMount() {
     this.props.fetchUser();
@@ -26,9 +18,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="foundation">
+        <div>
           <Header />
-          <div>
+          <div className="foundation">
             <Route exact path="/" component={Landing} />
             <Route exact path="/records" component={RecordIndex} />
             <Route path="/records/form" component={RecordForm} />

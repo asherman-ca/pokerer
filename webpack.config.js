@@ -1,21 +1,23 @@
-var webpack = requre('webpack');
+// var webpack = requre('webpack');
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: __dirname + '/public',
-    filename: 'bundle.js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader'
-      }
-    ]
-  }
-};
+// module.exports = {
+//   entry: './src/index.js',
+//   output: {
+//     path: __dirname + '/public',
+//     filename: 'bundle.js'
+//   },
+//   module: {
+//     loaders: [
+//       {
+//         test: /\.json$/,
+//         loader: 'json-loader'
+//       },
+//       {
+//         test: /\.js$/,
+//         loader: 'babel-loader'
+//       }
+//     ]
+//   }
+// };
+
+// delete asap
