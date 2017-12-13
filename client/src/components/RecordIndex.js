@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class RecordIndex extends Component {
   render() {
-    return <h2>Records Index</h2>;
+    return <div className="record-index">Records Index</div>;
   }
 }
 

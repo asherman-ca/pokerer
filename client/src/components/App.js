@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-import Header from './Header';
+import Header from './header/Header';
 import Landing from './Landing';
 import RecordForm from './RecordForm';
 import RecordIndex from './RecordIndex';
@@ -28,7 +28,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="foundation">
           <Header />
-          <div className="container">
+          <div>
             <Route exact path="/" component={Landing} />
             <Route exact path="/records" component={RecordIndex} />
             <Route path="/records/form" component={RecordForm} />
