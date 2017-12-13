@@ -1,5 +1,5 @@
 a {
-  color: initial;
+  color: white;
   text-decoration: none;
 }
 
@@ -20,12 +20,14 @@ body {
   background: #fafafa;
 }
 
-.record-form-container {
+.record-index {
   height: calc(100% - 64px);
+  padding: 0% 15%;
   padding-top: 25px;
 }
 
-.record-index {
+.record-form {
   height: calc(100% - 64px);
+  padding: 0% 15%;
   padding-top: 25px;
 }

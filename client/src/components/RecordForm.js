@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 
 class RecordForm extends Component {
   render() {
-    return <div>record form</div>;
+    return (
+      <div className="record-form">
+        <h1>Record Form</h1>
+      </div>
+    );
   }
 }
 

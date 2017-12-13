@@ -10,7 +10,7 @@ const IconMenuExampleSimple = () => (
     <IconMenu
       iconButtonElement={
         <IconButton>
-          <MoreVertIcon />
+          <MoreVertIcon color={'white'} />
         </IconButton>
       }
       anchorOrigin={{ horizontal: 'left', vertical: 'top' }}

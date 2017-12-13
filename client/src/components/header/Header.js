@@ -12,7 +12,16 @@ class Header extends Component {
   }
 
   render() {
-    const title = <Link to={this.props.auth ? '/records' : '/'}>Pokerer</Link>;
+    const title = (
+      <div>
+        <i
+          style={{ marginRight: '10px' }}
+          className="fas fa-trophy"
+          aria-hidden="true"
+        />
+        | <Link to={this.props.auth ? '/records' : '/'}>Pokerer</Link>
+      </div>
+    );
 
     return (
       <div>
@@ -21,6 +30,7 @@ class Header extends Component {
           showMenuIconButton={false}
           iconElementRight={this.props.auth ? <DropDown /> : <LoggedOut />}
           titleStyle={{ fontFamily: 'Spectral SC, serif' }}
+          style={{ padding: '0% 15%' }}
         />
       </div>
     );
