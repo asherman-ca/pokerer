@@ -12,9 +12,7 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props);
-
-    const title = <Link to={'/'}>Pokerer</Link>;
+    const title = <Link to={this.props.auth ? '/records' : '/'}>Pokerer</Link>;
 
     return (
       <div>
