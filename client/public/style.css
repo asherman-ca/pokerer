@@ -16,6 +16,8 @@
 
 .foundation {
   height: 100vh;
-  /* background: white; */
-  /* background: #fafafa; */
+}
+
+.record-form-container {
+  padding-top: 25px;
 }

@@ -1,3 +1,5 @@
+var webpack = requre('webpack');
+
 module.exports = {
   entry: './src/index.js',
   output: {
