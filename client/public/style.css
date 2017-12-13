@@ -1,0 +1,21 @@
+.pokerer {
+  font-family: 'Spectral SC', serif;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.nav-auth {
+  font-family: 'Spectral SC', serif;
+  font-size: 20px !important;
+}
+
+#root {
+  background: #fafafa;
+  /* height: 100vh; */
+}
+
+.foundation {
+  height: 100vh;
+  /* background: white; */
+  /* background: #fafafa; */
+}

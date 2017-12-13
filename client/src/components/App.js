@@ -7,6 +7,8 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
+import RecordForm from './RecordForm';
+import RecordIndex from './RecordIndex';
 
 // const Header = () => <h2>Header</h2>;
 const Dashboard = () => (
@@ -23,16 +25,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <BrowserRouter>
-          <div>
-            <Header />
+      <BrowserRouter>
+        <div className="foundation">
+          <Header />
+          <div className="container">
             <Route exact path="/" component={Landing} />
-            <Route exact path="/surveys" component={Dashboard} />
-            <Route path="/surveys/new" component={SurveyNew} />
+            <Route exact path="/records" component={RecordIndex} />
+            <Route path="/records/form" component={RecordForm} />
           </div>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }

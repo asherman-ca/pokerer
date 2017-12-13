@@ -10,15 +10,28 @@ class Header extends Component {
         return;
       case false:
         return (
-          <li>
-            <a href="/auth/google">David Hus Not Allowed</a>
-          </li>
+          <ul className="right">
+            <li>
+              <a className="nav-auth" href="/auth/google">
+                Login
+              </a>
+            </li>
+          </ul>
         );
       default:
         return (
-          <li>
-            <a href="/api/logout">Logout</a>
-          </li>
+          <ul className="right">
+            <li>
+              <Link className="nav-auth" to={'/records/form'}>
+                Form
+              </Link>
+            </li>
+            <li>
+              <a className="nav-auth" href="/api/logout">
+                Logout
+              </a>
+            </li>
+          </ul>
         );
     }
   }
@@ -27,13 +40,15 @@ class Header extends Component {
     return (
       <nav>
         <div className="nav-wrapper" style={{ backgroundColor: '#295D29' }}>
-          <Link
-            to={this.props.auth ? '/surveys' : '/'}
-            className="left brand-logo"
-          >
-            Logo
-          </Link>
-          <ul className="right">{this.renderContent()}</ul>
+          <ul className="left">
+            <Link
+              to={this.props.auth ? '/records' : '/'}
+              className="brand-logo pokerer"
+            >
+              Pokerer
+            </Link>
+          </ul>
+          {this.renderContent()}
         </div>
       </nav>
     );
