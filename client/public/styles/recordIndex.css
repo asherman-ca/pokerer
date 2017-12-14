@@ -1,14 +1,20 @@
 .record-index {
   height: calc(100% - 64px);
-  padding: 0% 15%;
   padding-top: 60px;
-  display: flex;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
   position: relative;
+  overflow-y: overlay;
+}
+
+.record-index-container {
+  width: 935px;
+  display: flex;
 }
 
 .record-index .record-index-left {
-  width: 66.5%;
+  width: 550px;
   padding: 0px 30px;
 }
 
@@ -19,7 +25,7 @@
 }
 
 .record-index .record-index-right {
-  width: 33.5%;
+  width: 293px;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
