@@ -11,7 +11,9 @@ class RecordIndex extends Component {
     return (
       <div className="record-index">
         <div className="record-index-left">
-          <div>Record Index</div>
+          {keys(this.props.records).map(key => {
+            return <RecordIndexItem key={key} />;
+          })}
           {keys(this.props.records).map(key => {
             return <RecordIndexItem key={key} />;
           })}

@@ -4,19 +4,23 @@
   padding-top: 60px;
   display: flex;
   font-family: sans-serif;
+  position: relative;
 }
 
 .record-index .record-index-left {
   width: 66.5%;
+  padding: 0px 30px;
 }
 
 .record-index-item {
   width: 100%;
+  margin-bottom: 60px;
   background: white;
 }
 
 .record-index .record-index-right {
   width: 33.5%;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
 }
