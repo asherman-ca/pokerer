@@ -8,7 +8,7 @@ import * as actions from '../actions';
 import Header from './header/Header';
 import Landing from './Landing';
 import RecordForm from './RecordForm';
-import RecordIndex from './RecordIndex';
+import RecordIndex from './recordIndex/RecordIndex';
 
 class App extends Component {
   componentDidMount() {

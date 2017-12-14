@@ -2,15 +2,14 @@ import React from 'react';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
-import { blue500, red500, greenA200 } from 'material-ui/styles/colors';
+import Menu from 'material-ui/svg-icons/navigation/menu';
 
 const IconMenuExampleSimple = () => (
   <div>
     <IconMenu
       iconButtonElement={
         <IconButton>
-          <MoreVertIcon color={'white'} />
+          <Menu color={'white'} />
         </IconButton>
       }
       anchorOrigin={{ horizontal: 'left', vertical: 'top' }}

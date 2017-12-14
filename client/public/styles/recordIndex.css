@@ -1,0 +1,61 @@
+.record-index {
+  height: calc(100% - 64px);
+  padding: 0% 15%;
+  padding-top: 60px;
+  display: flex;
+  font-family: sans-serif;
+}
+
+.record-index .record-index-left {
+  width: 66.5%;
+}
+
+.record-index-item {
+  width: 100%;
+  background: white;
+}
+
+.record-index .record-index-right {
+  width: 33.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.record-index-right .user-info {
+  flex-direction: row;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 7.5px;
+}
+
+.record-index-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info-logs {
+  margin-top: 40px;
+}
+
+.user-info-logs-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.player-index-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.take {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.game-list {
+  height: 272px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

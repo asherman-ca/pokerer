@@ -1,0 +1,31 @@
+@import 'landing.css';
+@import 'recordIndex.css';
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.pokerer {
+  font-family: 'Spectral SC', serif;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.nav-auth {
+  font-family: 'Spectral SC', serif;
+  font-size: 20px !important;
+}
+
+.foundation {
+  height: calc(100vh - 80px);
+  overflow-y: overlay;
+  background: #fafafa;
+}
+
+.record-form {
+  height: calc(100% - 64px);
+  padding: 0% 15%;
+  padding-top: 25px;
+  text-align: center;
+}
