@@ -30,7 +30,7 @@ class Header extends Component {
           showMenuIconButton={false}
           iconElementRight={this.props.auth ? <DropDown /> : <LoggedOut />}
           titleStyle={{ fontFamily: 'Spectral SC, serif' }}
-          style={{ padding: '0% 15%' }}
+          style={{ padding: '0% 17%' }}
         />
       </div>
     );
