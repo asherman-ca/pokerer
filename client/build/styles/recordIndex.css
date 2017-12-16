@@ -30,11 +30,12 @@
   padding: 10px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .record-index-item-title .title-winner {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .record-index-item-title .title-location {
