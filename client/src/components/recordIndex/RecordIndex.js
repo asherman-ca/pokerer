@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { keys } from 'lodash';
+import { keys, values } from 'lodash';
 
 import RecordIndexItem from './RecordIndexItem';
 import PlayerIndexItem from './PlayerIndexItem';
@@ -12,11 +12,8 @@ class RecordIndex extends Component {
       <div className="record-index">
         <div className="record-index-container">
           <div className="record-index-left">
-            {keys(this.props.records).map(key => {
-              return <RecordIndexItem key={key} />;
-            })}
-            {keys(this.props.records).map(key => {
-              return <RecordIndexItem key={key} />;
+            {values(this.props.records).map(record => {
+              return <RecordIndexItem record={record} />;
             })}
           </div>
           <div className="record-index-right">

@@ -14,18 +14,68 @@
 }
 
 .record-index .record-index-left {
-  width: 550px;
+  width: 600px;
   padding: 0px 30px;
 }
 
 .record-index-item {
   width: 100%;
   margin-bottom: 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: white;
 }
 
+.record-index-item-title {
+  /* height: 60px; */
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.record-index-item-title .title-winner {
+  font-weight: bold;
+}
+
+.record-index-item-title .title-location {
+  color: #999999;
+}
+
+.headshot-image {
+  width: 100%;
+}
+
+.record-container {
+  padding: 10px 16px;
+}
+
+.record-container-item {
+  display: flex;
+}
+
+.record-container .record-container-item-name {
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.record-container .record-container-item-take {
+  font-size: 13px;
+}
+
+.chat-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-top: 1px solid #999999;
+  color: #999999;
+}
+
+/* index right */
+
 .record-index .record-index-right {
-  width: 385px;
+  width: 335px;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
@@ -41,10 +91,13 @@
 .record-index-top {
   display: flex;
   flex-direction: row;
+  padding-bottom: 20px;
+  border-bottom: 0.25px #999999 solid;
 }
 
 .user-info-logs {
-  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 13px;
 }
 
 .user-info-logs-title {
@@ -54,8 +107,25 @@
 }
 
 .player-index-item {
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
+}
+
+.take {
+  width: 100%;
+}
+
+.earnings {
+  margin: 0 auto;
+}
+
+.player-index-item-location-name {
+  font-weight: bold;
+}
+
+.player-index-item-location-date {
+  color: #999999;
 }
 
 .take {
