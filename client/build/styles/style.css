@@ -1,5 +1,6 @@
 @import 'landing.css';
 @import 'recordIndex.css';
+@import 'recordForm.css';
 
 a {
   color: white;
@@ -25,11 +26,4 @@ a {
   height: calc(100vh - 80px);
   overflow: overlay;
   background: #fafafa;
-}
-
-.record-form {
-  height: calc(100% - 64px);
-  padding: 0% 15%;
-  padding-top: 25px;
-  text-align: center;
 }
