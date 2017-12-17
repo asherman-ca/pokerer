@@ -1,0 +1,33 @@
+.record-form {
+  height: calc(100% - 64px);
+  padding: 0% 15%;
+  padding-top: 60px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.record-form-container {
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* text-align: center; */
+}
+
+.record-form-container h1 {
+  text-align: center;
+}
+
+.record-form-date {
+  padding-left: 20px;
+}
+
+.record-form-date input {
+  border-bottom: none;
+}
+
+.submit-button {
+  height: 48px;
+  display: flex !important;
+  align-items: center;
+}
